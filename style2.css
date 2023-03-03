@@ -1,0 +1,370 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    list-style: none;
+}
+
+button {
+    background: none;
+    outline: none;
+    color: white;
+    border: 1px solid whitesmoke;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+button:hover {
+    background: black;
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+   margin: 0 auto;
+   text-align: center;
+}
+
+.navlink {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navlink-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.navlink-li {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+    padding: 20px 0;
+    transition: .3s ease;
+}
+
+.navlink-li a {
+    color: black;
+}
+
+.navlink-li:first-child::before{
+    content: "";
+    background: rgb(95, 4, 170);
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    transform: translateY(-20px);
+}
+
+.navlink-li:hover::before {
+    content: "";
+    background: rgb(95, 4, 170);
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    transform: translateY(-20px);
+}
+
+.navlink-li:last-child::before{
+    background: none;
+}
+
+.navlink-active a {
+    color: rgb(95, 4, 170);
+}
+
+.language {
+    background: rgba(128, 128, 128, 0.25);
+    border-radius: 50px;
+    border: none;
+    padding: 8px 16px;
+}
+
+.main-header {
+    background: url(./assets/img/bg.jpg) fixed center/cover;
+    color: white;
+    padding: 60px;
+    height: 70vh;
+}
+
+.main-header h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 30px 0 35px;
+}
+
+.main-header button {
+    padding: 15px 30px;
+    letter-spacing: 2px;
+}
+
+.main-header button i {
+    transform: translateX(5px);
+}
+
+.header-text {
+    padding: 45px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 34px;
+}
+
+.icon-part {
+    background: rgb(15, 15, 15);
+    padding: 65px 0;
+    color: whitesmoke;
+}
+
+.icon-part h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.icon-part p{
+    width: 80%;
+    margin: 10px auto 20px;
+}
+
+.icon-part button {
+    padding: 9px 32px;
+}
+
+.icon-part button:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+.icon-part-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.img-logo{
+    margin-bottom: 30px;
+}
+
+.news-part {
+    background: rgba(245, 245, 245, 0.8);
+    padding: 80px 0 45px;
+}
+
+.header-news {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-news-left {
+    line-height: 30px;
+}
+
+.header-news-left h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.header-news-left p {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.header-news-right button {
+    color: black;
+    border-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.header-news-right button:hover {
+    color: whitesmoke;
+}
+
+.main-news-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+.news {
+    width: 23%;
+    position: relative;
+}
+
+.img-news img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px #888;
+}
+
+.main-news-container h4 {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.main-news-container p {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+
+.link-news {
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+}
+
+.link-news a {
+    text-transform: uppercase;
+    color: rgb(95, 4, 170);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.link-news a:hover {
+    color:rgb(180, 180, 1);
+}
+
+.link-news a i {
+    transform: translateX(5px);
+}
+
+.contact-container {
+    padding: 65px 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    position: relative;
+}
+
+.contact-list::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: rgb(235, 235, 235);
+    bottom: -40px;
+}
+
+.contact-list .list {
+    width: 24%;
+    text-align: left;
+}
+
+.contact-list h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.list li {
+    margin: 15px 0;
+}
+
+.list img {
+    margin: 0 auto;
+    display: block;
+}
+
+.list p {
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.list h6 {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+}
+
+.footer-logo i {
+    font-size: rem;
+    margin: 0 12px 30px 0;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.contact-medias {
+    padding: 60px 0 15px;
+    display: flex;
+    align-content: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.medias-text {
+    text-align: left;
+    width: 30%;
+}
+
+.medias-text h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.medias-text p {
+    font-size: 0.8rem;
+}
+
+.medias-logos {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.medias-logos img {
+    width: 60px;
+}
+
+footer {
+    background: #151515;
+    color: whitesmoke;
+    padding: 25px;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+}

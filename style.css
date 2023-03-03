@@ -7,6 +7,11 @@ padding: 0;
 
 /*===========================Style general===========================*/
 
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 a {
     text-decoration: none;
 }
@@ -16,7 +21,7 @@ li {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*===========================Navbar===========================*/
@@ -166,12 +171,38 @@ body {
     box-shadow: -5px -6px 20px 0px rgba(0, 0, 0, 0.445);
 }
 
-
 .news a{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
     color: blueviolet;
+}
+
+/*==========Section Contact=========*/
+
+.contact-list {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 10px;
+    height: 300Px;
+}
+.list img {
+    width: 50%;
+}
+
+
+.list li,
+.list p{
+  padding: 5px 5px 5px 0;
+  font-size: 0.8rem;
 }
 
 
